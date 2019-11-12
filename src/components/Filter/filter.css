@@ -1,0 +1,40 @@
+.nav {
+  width: 300px;
+  margin: 10px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+@media screen and (min-width: 640px) {
+  .nav {
+    width: 490px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .nav {
+    width: 940px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.selection-sport {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px 20px;
+  background: dodgerblue;
+  font-family: Oswald;
+  text-transform: uppercase;
+  transition: background-color .2s ease-out;
+}
+
+.selection-sport:hover {
+  background: #4da7ff;
+}
+
+.unselected-sport {
+  background: transparent;
+}

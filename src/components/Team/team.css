@@ -1,0 +1,101 @@
+.team-item {
+  padding: 0;
+  margin: 30px auto;
+}
+
+.team-item:first-child {
+  margin-top: 0;
+}
+
+.team {
+  border-top: 2px solid #f3f3f3;
+  position: relative;
+  padding: 5px 10px 20px;
+}
+
+.team-item:first-child .team {
+  border-top: none;
+}
+
+.team:hover {
+  background: rgba(0, 0, 0, 0.025);
+  color: #357;
+}
+
+.team-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  margin-bottom: 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.team-division {
+  text-align: right;
+}
+
+.team-name {
+  text-align: center;
+}
+
+.team-name-heading {
+  font-size: 28px;
+  margin: 0 auto;
+  line-height: 18px;
+  color: #666;
+}
+
+.team:hover .team-name-heading {
+  color: #357;
+}
+
+.team-name-subheading {
+  font-size: 42px;
+  margin: 0 auto;
+  line-height: 40px;
+}
+
+.team:hover .team-name-subheading {
+  color: dodgerblue;
+}
+
+.color-bar {
+  position: absolute;
+  width: 100%;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+}
+
+.team-color {
+  display: inline-block;
+  min-width: 20px;
+  height: 10px;
+}
+
+.distance {
+  padding: 10px 0;
+  color: #999;
+  text-align: center;
+}
+
+.team-links {
+  margin-bottom: 0;
+}
+
+.address,
+.team-website {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.team-link {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #666;
+}
+
+.team-link:hover {
+  color: #000000;
+}

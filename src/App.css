@@ -1,22 +1,65 @@
-.App {
-  text-align: center;
+* {
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: #333;
+  font-family: Lato, sans-serif;
+  font-size: 13px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #09d3ac;
+.hidden {
+  display: none;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.input,
+.button {
+  background: #FFF;
+  border: none;
+  padding: 2px 5px;
+  color: #333;
+}
+
+.button {
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+
+.results {
+  width: 300px;
+  margin: 20px auto 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: start;
+  justify-items: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 640px) {
+  .results {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .results {
+    max-width: 940px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
